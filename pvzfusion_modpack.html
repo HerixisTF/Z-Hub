@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Hub</title>
+    <link rel="icon" href="images/logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="css/mods.css">
+</head>
+<body>
+<header>
+  <h1 class="gradient-text">Z-Hub</h1>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="https://t.me/Z_Hub_PvZ">Телеграм канал</a>
+  </nav>
+</header>
+<div class="container">
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Поиск модов..." />
+  </div>
+  <div class="featured-game"></div>
+  <div class="game-list">
+      <div class="game-card" data-link="https://github.com/HerixisTF/Z-Hub-Mods/releases/download/Mods/Made-by-persikfusion.zip" data-title="Made by persikfusion" data-desc="⭐ Были добавлены 6 новых гибридов и их перевод! ⭐ Присутствуют: 🏆 Чит панель 🤩 Модовые растения и зомби (55+ шт) 🤩 Перевод на русский язык ❔ Просьба для владельцев телеграмм каналов!" data-img="images/Fusion_Banner.webp">
+          <img src="images/Fusion_Banner.webp" alt="Made by persikfusion" />
+          <h3>Made by persikfusion</h3>
+          <p>Мод на новые растения PvZ fusion вместе с их переводом V5.1!</p>
+          <div class="bottom-info">
+              <div class="mods-count">Обновлено: 28.05.2025</div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-window" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDesc">
+    <button class="close-btn" id="modalCloseBtn" aria-label="Закрыть"></button>
+    <img src="" alt="" class="modal-img" id="modalImg" />
+    <div class="modal-content">
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+      <div class="modal-buttons">
+        <a href="#" class="btn-download" id="downloadBtn" target="_blank" rel="noopener noreferrer">Скачать</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="scripts/mods.js"></script>
+</body>
+</html>
