@@ -144,6 +144,18 @@
     </div>
   </div>
 </div>
+<script>
+  if (window.location.pathname.endsWith("pvz_mods.html")) {
+    const newUrl = window.location.href.replace(/pvz_mods\.html$/, "");
+    window.history.replaceState({}, "", newUrl);
+    
+    document.querySelectorAll('a[href$="pvz_mods.html"]').forEach(link => {
+      link.textContent = "Моды";
+      link.href = newUrl;
+    });
+  }
+</script>
 <script src="scripts/mods.js"></script>
 </body>
 </html>
+
